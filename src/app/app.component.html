@@ -1,0 +1,154 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <ul class="navbar-nav mr-auto">
+    <!-- Menú para Autos -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="autosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Autos
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="autosDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/autos/lista']">Lista de Autos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/autos/nuevo']">Agregar Auto</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Clientes -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="clientesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Clientes
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="clientesDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/clientes/lista']">Lista de Clientes</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/clientes/nuevo']">Agregar Cliente</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Vendedores -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="vendedoresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Vendedores
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="vendedoresDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/vendedores/lista']">Lista de Vendedores</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/vendedores/nuevo']">Agregar Vendedor</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Ventas -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="ventasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Ventas
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="ventasDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/ventas/lista']">Lista de Ventas</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/ventas/nuevo']">Registrar Venta</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Inventario -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="inventarioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Inventario
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="inventarioDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/inventario/lista']">Lista de Inventario</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/inventario/nuevo']">Agregar al Inventario</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Proveedores -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="proveedoresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Proveedores
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="proveedoresDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/proveedores/lista']">Lista de Proveedores</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/proveedores/nuevo']">Agregar Proveedor</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Sucursales -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="sucursalesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Sucursales
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="sucursalesDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/sucursales/lista']">Lista de Sucursales</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/sucursales/nuevo']">Agregar Sucursal</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Marcas -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="marcasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Marcas
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="marcasDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/marcas/lista']">Lista de Marcas</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/marcas/nuevo']">Agregar Marca</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Modelos -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="modelosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Modelos
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/modelos/lista']">Lista de Modelos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/modelos/nuevo']">Agregar Modelo</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Menú para Servicios Post-Venta -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Servicios Post-Venta
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+        <li>
+          <a class="dropdown-item" [routerLink]="['/servicios/lista']">Lista de Servicios</a>
+        </li>
+        <li>
+          <a class="dropdown-item" [routerLink]="['/servicios/nuevo']">Agregar Servicio</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

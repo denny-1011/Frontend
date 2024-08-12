@@ -1,0 +1,12 @@
+<h2>Detalle de Auto</h2>
+
+<div>
+  <p>Marca: {{ auto.marca }}</p>
+  <p>Modelo: {{ auto.modelo }}</p>
+  <p>Año: {{ auto.año }}</p>
+  <p>Precio: {{ auto.precio }}</p>
+</div>
+
+<button [routerLink]="['/autos/editar', auto.id]">Editar</button>
+<button (click)="delete()">Eliminar</button>
+<button [routerLink]="['/autos']">Volver</button>

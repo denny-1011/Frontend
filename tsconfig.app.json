@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": [],
+    "target": "ES2022", // Añadido para asegurar compatibilidad
+    "module": "ES2022", // Añadido para asegurar compatibilidad
+    "useDefineForClassFields": false // Necesario para evitar errores con Angular
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
